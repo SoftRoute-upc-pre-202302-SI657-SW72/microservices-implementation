@@ -3,6 +3,7 @@ package com.softroute.clientmicroservice.service;
 import com.softroute.clientmicroservice.entity.ClientEntity;
 import com.softroute.clientmicroservice.repository.IClientRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -13,35 +14,31 @@ public class ClientService {
     @Autowired
     IClientRepository clientRepository;
 
-    public List<ClientEntity> getAll() throws Exception {
-        try {
-            return clientRepository.findAll();
-        } catch (Exception e) {
-            throw new Exception(e.getMessage());
-        }
+    public List<ClientEntity> getAll() {
+        return clientRepository.findAll();
     }
 
-    public ClientEntity save(ClientEntity clientEntity) throws Exception {
-        try {
-            return clientRepository.save(clientEntity);
-        } catch (Exception e) {
-            throw new Exception(e.getMessage());
-        }
+    public ClientEntity save(ClientEntity clientEntity) {
+        return clientRepository.save(clientEntity);
     }
 
-    public ClientEntity getById(Long id) throws Exception {
-        try {
-            return clientRepository.findById(id).get();
-        } catch (Exception e) {
-            throw new Exception(e.getMessage());
-        }
+    public ClientEntity getById(Long id) {
+        return clientRepository.findById(id).orElse(null);
     }
 
-    public ClientEntity update(ClientEntity clientEntity) throws Exception {
-        try {
-            return clientRepository.save(clientEntity);
-        } catch (Exception e) {
-            throw new Exception(e.getMessage());
-        }
+    public ClientEntity update(ClientEntity clientEntity) {
+        return clientRepository.save(clientEntity);
+    }
+
+    public void delete(Long id) {
+        clientRepository.deleteById(id);
+    }
+
+    public ClientEntity getByDni(String dni) {
+        return clientRepository.getByDni(dni);
+    }
+
+    public ClientEntity getByEmail(String email) {
+        return clientRepository.getByEmail(email);
     }
 }
