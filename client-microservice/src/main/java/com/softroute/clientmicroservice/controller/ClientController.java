@@ -26,6 +26,10 @@ public class ClientController {
 
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<ClientEntity> save(@RequestBody ClientEntity clientEntity) {
+        ClientEntity client = clientService.getByDni(clientEntity.getDni());
+        if(client != null) {
+            return ResponseEntity.ok(client);
+        }
         ClientEntity clientNew = clientService.save(clientEntity);
         return ResponseEntity.ok(clientNew);
     }
@@ -39,7 +43,7 @@ public class ClientController {
         return ResponseEntity.ok(client);
     }
 
-    @PutMapping(consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+    @PutMapping(value = "/{id}", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<ClientEntity> update(@PathVariable("id") Long id, @RequestBody ClientEntity clientEntity) {
         ClientEntity client = clientService.getById(id);
         if(client == null) {
