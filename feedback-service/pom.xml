@@ -78,7 +78,12 @@
 			<artifactId>spring-boot-starter-actuator</artifactId>
 			<version>2.6.2</version>
 		</dependency>
-
+		<!-- Message Broker-->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-bus-amqp</artifactId>
+			<version>3.0.3</version>
+		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
