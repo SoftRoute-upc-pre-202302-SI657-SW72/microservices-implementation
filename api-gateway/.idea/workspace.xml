@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eae7d270-43af-4775-bf77-d3d990c455eb" name="Changes" comment="" />
+    <list default="true" id="eae7d270-43af-4775-bf77-d3d990c455eb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../client-microservice/src/main/java/com/softroute/clientmicroservice/util/SwaggerConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shipment-microservice/src/main/java/com/softroute/shipmentmicroservice/util/SwaggerConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-microservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client-microservice/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-microservice/src/main/java/com/softroute/clientmicroservice/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client-microservice/src/main/java/com/softroute/clientmicroservice/controller/ClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shipment-microservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../shipment-microservice/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,7 +48,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;api-gateway&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;client-microservice&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/UPC Abel/CICLO VII/Fundamentos de Arquitectura de Software/microservices-implementation/api-gateway&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -68,6 +76,8 @@
       <updated>1697729946121</updated>
       <workItem from="1697729947185" duration="1686000" />
       <workItem from="1697783840692" duration="450000" />
+      <workItem from="1697784338656" duration="1251000" />
+      <workItem from="1697812580552" duration="610000" />
     </task>
     <servers />
   </component>
