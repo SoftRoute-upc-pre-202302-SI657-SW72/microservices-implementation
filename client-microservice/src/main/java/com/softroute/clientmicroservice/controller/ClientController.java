@@ -1,6 +1,7 @@
 package com.softroute.clientmicroservice.controller;
 
 import com.softroute.clientmicroservice.entity.ClientEntity;
+import com.softroute.clientmicroservice.model.ShipmentEntity;
 import com.softroute.clientmicroservice.service.ClientService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -99,5 +100,14 @@ public class ClientController {
             return ResponseEntity.notFound().build();
         }
         return ResponseEntity.ok(client);
+    }
+
+    @GetMapping(value = "/shipmentById/{shipmentId}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<ShipmentEntity> getShipmentsById(@PathVariable("shipmentId") Long shipmentId) {
+        ShipmentEntity shipment = clientService.getShipmentById(shipmentId);
+        if(shipment == null) {
+            return ResponseEntity.notFound().build();
+        }
+        return ResponseEntity.ok(shipment);
     }
 }

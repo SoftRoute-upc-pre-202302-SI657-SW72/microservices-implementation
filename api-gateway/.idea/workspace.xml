@@ -4,19 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="eae7d270-43af-4775-bf77-d3d990c455eb" name="Changes" comment="" />
-=======
     <list default="true" id="eae7d270-43af-4775-bf77-d3d990c455eb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../client-microservice/src/main/java/com/softroute/clientmicroservice/util/SwaggerConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shipment-microservice/src/main/java/com/softroute/shipmentmicroservice/util/SwaggerConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client-microservice/src/main/java/com/softroute/clientmicroservice/config/RestTemplateConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client-microservice/src/main/java/com/softroute/clientmicroservice/model/ShipmentEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client-microservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client-microservice/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client-microservice/src/main/java/com/softroute/clientmicroservice/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client-microservice/src/main/java/com/softroute/clientmicroservice/controller/ClientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shipment-microservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../shipment-microservice/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-microservice/src/main/java/com/softroute/clientmicroservice/service/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client-microservice/src/main/java/com/softroute/clientmicroservice/service/ClientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config-server/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../config-server/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config-server/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../config-server/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../discovery-service/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../discovery-service/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../discovery-service/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../discovery-service/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shipment-microservice/src/main/java/com/softroute/shipmentmicroservice/controller/ShipmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shipment-microservice/src/main/java/com/softroute/shipmentmicroservice/controller/ShipmentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shipment-microservice/src/main/java/com/softroute/shipmentmicroservice/service/ShipmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shipment-microservice/src/main/java/com/softroute/shipmentmicroservice/service/ShipmentService.java" afterDir="false" />
     </list>
->>>>>>> client-microservice
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,7 +43,6 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-<<<<<<< HEAD
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RequestMappingsPanelOrder0": "0",
@@ -62,26 +61,6 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-=======
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;client-microservice&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/UPC Abel/CICLO VII/Fundamentos de Arquitectura de Software/microservices-implementation/api-gateway&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  }
-}</component>
->>>>>>> client-microservice
   <component name="RunManager">
     <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="api-gateway" />
