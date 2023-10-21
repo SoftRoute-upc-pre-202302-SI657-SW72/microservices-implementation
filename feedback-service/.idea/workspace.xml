@@ -4,31 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="181c3301-e69e-484f-bcc7-11fae68e2ed8" name="Changes" comment="" />
+    <list default="true" id="68810fb6-1409-49d2-b27e-4185f1448750" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="dev" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "AbelCierto"
-  }
-}]]></component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="cac18dec-f40d-4898-afa4-237532a2b963" />
-        <option name="url" value="https://github.com/SoftRoute-upc-pre-202302-SI657-SW72/microservices-implementation" />
-      </UrlAndAccount>
-    </option>
-  </component>
-
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -36,11 +25,10 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 3
-}</component>
-  <component name="ProjectId" id="2X15pRzOsK6vdmfyHPWudDGpHEQ" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2X33RBdnA1Pn3CTpQsSlry4mhtC" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -54,10 +42,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-
-    "git-widget-placeholder": "agency-microservice",
-
-    "last_opened_file_path": "D:/UPC Abel/CICLO VII/Fundamentos de Arquitectura de Software/microservices-implementation/service-configuration",
+    "git-widget-placeholder": "feedback-microservice",
+    "last_opened_file_path": "D:/UPC Abel/CICLO VII/Fundamentos de Arquitectura de Software/microservices-implementation/feedback-service",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -66,9 +52,10 @@
   }
 }]]></component>
   <component name="RunManager">
-    <configuration name="DiscoveryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="discovery-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.softroute.discoveryservice.DiscoveryServiceApplication" />
+    <configuration name="FeedbackServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="feedback-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="upc.edu.pe.softroute.feedbackservice.FeedbackServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -77,18 +64,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="181c3301-e69e-484f-bcc7-11fae68e2ed8" name="Changes" comment="" />
-      <created>1697783928517</created>
+      <changelist id="68810fb6-1409-49d2-b27e-4185f1448750" name="Changes" comment="" />
+      <created>1697843928779</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1697783928517</updated>
-      <workItem from="1697783929575" duration="827000" />
-      <workItem from="1697812478965" duration="838000" />
-      <workItem from="1697819500110" duration="4661000" />
-      <workItem from="1697837786241" duration="665000" />
-
-      <workItem from="1697892561059" duration="1215000" />
-      
+      <updated>1697843928779</updated>
+      <workItem from="1697843930038" duration="1007000" />
     </task>
     <servers />
   </component>
