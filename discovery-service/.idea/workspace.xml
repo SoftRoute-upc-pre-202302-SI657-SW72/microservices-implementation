@@ -13,6 +13,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+
   <component name="GitHubPullRequestSearchHistory"><![CDATA[{
   "lastFilter": {
     "state": "OPEN",
@@ -27,6 +28,7 @@
       </UrlAndAccount>
     </option>
   </component>
+
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -52,7 +54,9 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+
     "git-widget-placeholder": "agency-microservice",
+
     "last_opened_file_path": "D:/UPC Abel/CICLO VII/Fundamentos de Arquitectura de Software/microservices-implementation/service-configuration",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -82,7 +86,9 @@
       <workItem from="1697812478965" duration="838000" />
       <workItem from="1697819500110" duration="4661000" />
       <workItem from="1697837786241" duration="665000" />
+
       <workItem from="1697892561059" duration="1215000" />
+      
     </task>
     <servers />
   </component>
