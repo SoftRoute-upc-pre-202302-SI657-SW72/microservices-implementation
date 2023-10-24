@@ -92,8 +92,9 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Merging dev",
-    "last_opened_file_path": "D:/UPC Abel/CICLO VII/Fundamentos de Arquitectura de Software/microservices-implementation/api-gateway",
+    "git-widget-placeholder": "feedback-microservice",
+    "last_opened_file_path": "D:/UPC Abel/CICLO VII/Fundamentos de Arquitectura de Software/microservices-implementation/client-microservice",
+
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -122,6 +123,7 @@
       <workItem from="1697783840692" duration="450000" />
       <workItem from="1697784338656" duration="1251000" />
       <workItem from="1697812580552" duration="610000" />
+      <workItem from="1697837648531" duration="847000" />
     </task>
     <servers />
   </component>
