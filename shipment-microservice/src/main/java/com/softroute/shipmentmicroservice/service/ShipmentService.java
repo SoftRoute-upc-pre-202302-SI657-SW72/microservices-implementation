@@ -45,5 +45,15 @@ public class ShipmentService {
         return shipmentRepository.getByEmitterIdAndReceiverId(emitterId, receiverId);
     }
 
+    //put
+    public ShipmentEntity update(ShipmentEntity shipmentEntity) {
+        return shipmentRepository.save(shipmentEntity);
+    }
+
+    //delete by id
+    public void deleteById(Long id) {
+        shipmentRepository.deleteById(id);
+    }
+
 
 }
