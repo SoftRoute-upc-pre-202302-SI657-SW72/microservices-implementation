@@ -31,13 +31,13 @@ public class ShipmentEntity {
     private Long originAgencyId;
     @Column(name = "destination_agency_id", nullable = false)
     private Long destinationAgencyId;
-    @Column(name = "type_package_id", nullable = false)
-    private Long typePackageId;
+    @Column(name = "type_package", nullable = false)
+    private String typePackage;
     @Column(name = "emitter_id", nullable = false)
     private Long emitterId;
     @Column(name = "receiver_id", nullable = false)
     private Long receiverId;
-    @Column(name = "location_information_id", nullable = false)
-    private Long locationInformationId;
+    @Column(name = "location_information", nullable = false)
+    private String locationInformation;
 
 }

@@ -1,6 +1,7 @@
 package com.softroute.shipmentmicroservice.controller;
 
 import com.softroute.shipmentmicroservice.entity.ShipmentEntity;
+import com.softroute.shipmentmicroservice.model.ClientEntity;
 import com.softroute.shipmentmicroservice.service.ShipmentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -129,6 +130,16 @@ public class ShipmentController {
             }
             shipmentService.deleteById(shipmentId);
             return ResponseEntity.ok(shipment);
+        } catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    @PostMapping(value="/saveClient", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<ClientEntity> saveClient(@Valid @RequestBody ClientEntity client) {
+        try {
+            ClientEntity clientNew = shipmentService.saveClient(client);
+            return ResponseEntity.status(HttpStatus.CREATED).body(clientNew);
         } catch (Exception e) {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }

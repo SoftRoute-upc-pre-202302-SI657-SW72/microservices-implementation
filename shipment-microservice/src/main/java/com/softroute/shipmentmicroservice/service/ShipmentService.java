@@ -1,7 +1,9 @@
 package com.softroute.shipmentmicroservice.service;
 
 import com.softroute.shipmentmicroservice.entity.ShipmentEntity;
+import com.softroute.shipmentmicroservice.feignclients.ClientFeignClient;
 import com.softroute.shipmentmicroservice.repository.ShipmentRepository;
+import com.softroute.shipmentmicroservice.model.ClientEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,6 +14,9 @@ public class ShipmentService {
 
     @Autowired
     ShipmentRepository shipmentRepository;
+
+    @Autowired
+    ClientFeignClient clientFeignClient;
 
     public List<ShipmentEntity> getAll() {
         return shipmentRepository.findAll();
@@ -53,6 +58,10 @@ public class ShipmentService {
     //delete by id
     public void deleteById(Long id) {
         shipmentRepository.deleteById(id);
+    }
+
+    public ClientEntity saveClient(ClientEntity client) {
+        return clientFeignClient.save(client);
     }
 
 
