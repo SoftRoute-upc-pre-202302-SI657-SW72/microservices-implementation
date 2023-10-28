@@ -15,4 +15,9 @@ public interface ShipmentRepository extends JpaRepository<ShipmentEntity, Long> 
     ShipmentEntity getByCode(String code);
 
     ShipmentEntity getByEmitterIdAndReceiverId(Long emitterId, Long receiverId);
+
+    ShipmentEntity getByOriginAgencyId(Long originAgencyId);
+
+    ShipmentEntity getByDestinationAgencyId(Long destinationAgencyId);
+
 }

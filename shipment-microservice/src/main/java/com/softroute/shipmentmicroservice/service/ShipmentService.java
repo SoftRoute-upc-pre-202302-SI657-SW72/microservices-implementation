@@ -30,10 +30,6 @@ public class ShipmentService {
         return shipmentRepository.save(shipment);
     }
 
-    public void delete(Long id) {
-        shipmentRepository.deleteById(id);
-    }
-
     public List<ShipmentEntity> getByEmitterId(Long emitterId) {
         return shipmentRepository.getByEmitterId(emitterId);
     }
@@ -62,6 +58,26 @@ public class ShipmentService {
 
     public ClientEntity saveClient(ClientEntity client) {
         return clientFeignClient.save(client);
+    }
+
+    public ShipmentEntity getByOriginAgencyId(Long originAgencyId) {
+        return shipmentRepository.getByOriginAgencyId(originAgencyId);
+    }
+
+    public ShipmentEntity getByDestinationAgencyId(Long destinationId) {
+        return shipmentRepository.getByDestinationAgencyId(destinationId);
+    }
+
+    public ClientEntity getClientByDni(String clientDni) {
+        return clientFeignClient.getByDni(clientDni);
+    }
+
+    public ClientEntity getClientByEmail(String clientEmail) {
+        return clientFeignClient.getByEmail(clientEmail);
+    }
+
+    public ClientEntity getClientById(Long clientId) {
+        return clientFeignClient.getById(clientId);
     }
 
 

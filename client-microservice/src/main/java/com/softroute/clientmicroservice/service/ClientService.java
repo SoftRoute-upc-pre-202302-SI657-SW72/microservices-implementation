@@ -43,7 +43,7 @@ public class ClientService {
         clientRepository.deleteById(id);
     }
 
-    public ClientEntity getByDni(String dni) {
+        public ClientEntity getByDni(String dni) {
 
         return clientRepository.getByDni(dni);
     }

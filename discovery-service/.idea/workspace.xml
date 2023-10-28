@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="181c3301-e69e-484f-bcc7-11fae68e2ed8" name="Changes" comment="" />
+    <list default="true" id="181c3301-e69e-484f-bcc7-11fae68e2ed8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../api-gateway/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../api-gateway/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-microservice/src/main/java/com/softroute/clientmicroservice/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client-microservice/src/main/java/com/softroute/clientmicroservice/controller/ClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-microservice/src/main/java/com/softroute/clientmicroservice/service/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client-microservice/src/main/java/com/softroute/clientmicroservice/service/ClientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config-server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../config-server/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shipment-microservice/src/main/java/com/softroute/shipmentmicroservice/controller/ShipmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shipment-microservice/src/main/java/com/softroute/shipmentmicroservice/controller/ShipmentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shipment-microservice/src/main/java/com/softroute/shipmentmicroservice/feignclients/ClientFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shipment-microservice/src/main/java/com/softroute/shipmentmicroservice/feignclients/ClientFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shipment-microservice/src/main/java/com/softroute/shipmentmicroservice/repository/ShipmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shipment-microservice/src/main/java/com/softroute/shipmentmicroservice/repository/ShipmentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shipment-microservice/src/main/java/com/softroute/shipmentmicroservice/service/ShipmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shipment-microservice/src/main/java/com/softroute/shipmentmicroservice/service/ShipmentService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,13 +23,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "AbelCierto"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;AbelCierto&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -28,7 +37,6 @@
       </UrlAndAccount>
     </option>
   </component>
-
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -54,9 +62,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-
-    "git-widget-placeholder": "agency-microservice",
-
+    "git-widget-placeholder": "shipment-microservice",
     "last_opened_file_path": "D:/UPC Abel/CICLO VII/Fundamentos de Arquitectura de Software/microservices-implementation/service-configuration",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -86,9 +92,7 @@
       <workItem from="1697812478965" duration="838000" />
       <workItem from="1697819500110" duration="4661000" />
       <workItem from="1697837786241" duration="665000" />
-
       <workItem from="1697892561059" duration="1215000" />
-      
     </task>
     <servers />
   </component>
