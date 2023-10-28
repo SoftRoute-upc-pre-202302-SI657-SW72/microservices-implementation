@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="eae7d270-43af-4775-bf77-d3d990c455eb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../service-configuration" beforeDir="false" afterPath="$PROJECT_DIR$/../service-configuration" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +43,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "shipment-microservice",
-    "last_opened_file_path": "D:/UPC Abel/CICLO VII/Fundamentos de Arquitectura de Software/microservices-implementation/api-gateway",
+    "last_opened_file_path": "D:/UPC Abel/CICLO VII/Fundamentos de Arquitectura de Software/microservices-implementation/client-microservice",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -74,6 +73,7 @@
       <workItem from="1697784338656" duration="1251000" />
       <workItem from="1697812580552" duration="610000" />
       <workItem from="1698188191228" duration="6557000" />
+      <workItem from="1698518708077" duration="699000" />
     </task>
     <servers />
   </component>
