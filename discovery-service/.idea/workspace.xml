@@ -6,14 +6,29 @@
   <component name="ChangeListManager">
     <list default="true" id="181c3301-e69e-484f-bcc7-11fae68e2ed8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../api-gateway/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../api-gateway/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client-microservice/src/main/java/com/softroute/clientmicroservice/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client-microservice/src/main/java/com/softroute/clientmicroservice/controller/ClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api-gateway/src/main/java/com/softroute/apigateway/ApiGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../api-gateway/src/main/java/com/softroute/apigateway/ApiGatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../api-gateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api-gateway/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../api-gateway/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api-gateway/target/classes/com/softroute/apigateway/ApiGatewayApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../api-gateway/target/classes/com/softroute/apigateway/ApiGatewayApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-microservice/src/main/java/com/softroute/clientmicroservice/config/RestTemplateConfig.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../client-microservice/src/main/java/com/softroute/clientmicroservice/service/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client-microservice/src/main/java/com/softroute/clientmicroservice/service/ClientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-microservice/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../client-microservice/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-microservice/target/classes/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../client-microservice/target/classes/bootstrap.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-microservice/target/classes/com/softroute/clientmicroservice/controller/ClientController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../client-microservice/target/classes/com/softroute/clientmicroservice/controller/ClientController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-microservice/target/classes/com/softroute/clientmicroservice/service/ClientService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../client-microservice/target/classes/com/softroute/clientmicroservice/service/ClientService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../config-server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../config-server/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../config-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../config-server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config-server/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../config-server/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shipment-microservice/src/main/java/com/softroute/shipmentmicroservice/controller/ShipmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shipment-microservice/src/main/java/com/softroute/shipmentmicroservice/controller/ShipmentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/softroute/discoveryservice/DiscoveryServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/softroute/discoveryservice/DiscoveryServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/softroute/discoveryservice/DiscoveryServiceApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/softroute/discoveryservice/DiscoveryServiceApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shipment-microservice/src/main/java/com/softroute/shipmentmicroservice/ShipmentMicroserviceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shipment-microservice/src/main/java/com/softroute/shipmentmicroservice/ShipmentMicroserviceApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../shipment-microservice/src/main/java/com/softroute/shipmentmicroservice/feignclients/ClientFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shipment-microservice/src/main/java/com/softroute/shipmentmicroservice/feignclients/ClientFeignClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shipment-microservice/src/main/java/com/softroute/shipmentmicroservice/repository/ShipmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shipment-microservice/src/main/java/com/softroute/shipmentmicroservice/repository/ShipmentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shipment-microservice/src/main/java/com/softroute/shipmentmicroservice/service/ShipmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shipment-microservice/src/main/java/com/softroute/shipmentmicroservice/service/ShipmentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shipment-microservice/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../shipment-microservice/src/main/resources/bootstrap.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +78,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "shipment-microservice",
-    "last_opened_file_path": "D:/UPC Abel/CICLO VII/Fundamentos de Arquitectura de Software/microservices-implementation/service-configuration",
+    "last_opened_file_path": "D:/UPC Abel/CICLO VII/Fundamentos de Arquitectura de Software/microservices-implementation/config-server",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -93,6 +108,8 @@
       <workItem from="1697819500110" duration="4661000" />
       <workItem from="1697837786241" duration="665000" />
       <workItem from="1697892561059" duration="1215000" />
+      <workItem from="1698614116604" duration="7000" />
+      <workItem from="1698854778568" duration="6664000" />
     </task>
     <servers />
   </component>

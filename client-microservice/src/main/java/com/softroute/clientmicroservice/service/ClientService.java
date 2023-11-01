@@ -15,9 +15,6 @@ public class ClientService {
     @Autowired
     IClientRepository clientRepository;
 
-    @Autowired
-    RestTemplate restTemplate;
-
     public List<ClientEntity> getAll() {
 
         return clientRepository.findAll();
@@ -51,12 +48,5 @@ public class ClientService {
     public ClientEntity getByEmail(String email) {
         return clientRepository.getByEmail(email);
     }
-
-    public ShipmentEntity getShipmentById(Long shipmentId) {
-        String url = "http://localhost:8080/api/v1/shipment/getById/" + shipmentId;
-        //Shipment shipment = responseEntity.getBody();
-        return restTemplate.getForObject(url, ShipmentEntity.class);
-    }
-
 
 }

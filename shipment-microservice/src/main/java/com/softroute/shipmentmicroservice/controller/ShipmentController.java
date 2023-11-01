@@ -24,6 +24,11 @@ public class ShipmentController {
     public ResponseEntity<ShipmentEntity> saveShipment(@Valid @RequestBody ShipmentEntity shipment) {
         try {
             ShipmentEntity shipmentNew = shipmentService.save(shipment);
+            ClientEntity clientEmitter = shipmentService.getClientById(shipment.getEmitterId());
+            ClientEntity clientReceiver = shipmentService.getClientById(shipment.getReceiverId());
+            if(clientEmitter == null || clientReceiver == null){
+                return ResponseEntity.notFound().build();
+            }
             return ResponseEntity.status(HttpStatus.CREATED).body(shipmentNew);
         } catch (Exception e) {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);

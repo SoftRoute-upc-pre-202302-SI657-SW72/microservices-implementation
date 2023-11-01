@@ -110,13 +110,4 @@ public class ClientController {
         }
         return ResponseEntity.ok(client);
     }
-
-    @GetMapping(value = "/shipmentById/{shipmentId}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<ShipmentEntity> getShipmentsById(@PathVariable("shipmentId") Long shipmentId) {
-        ShipmentEntity shipment = clientService.getShipmentById(shipmentId);
-        if(shipment == null) {
-            return ResponseEntity.notFound().build();
-        }
-        return ResponseEntity.ok(shipment);
-    }
 }
