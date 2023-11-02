@@ -1,6 +1,7 @@
 package com.softroute.shipmentmicroservice.controller;
 
 import com.softroute.shipmentmicroservice.entity.ShipmentEntity;
+import com.softroute.shipmentmicroservice.model.AgencyEntity;
 import com.softroute.shipmentmicroservice.model.ClientEntity;
 import com.softroute.shipmentmicroservice.service.ShipmentService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,8 +26,10 @@ public class ShipmentController {
         try {
             ClientEntity clientEmitter = shipmentService.getClientById(shipment.getEmitterId());
             ClientEntity clientReceiver = shipmentService.getClientById(shipment.getReceiverId());
+            AgencyEntity originAgency = shipmentService.getAgencyById(shipment.getOriginAgencyId());
+            AgencyEntity destinationAgency = shipmentService.getAgencyById(shipment.getDestinationAgencyId());
 
-            if(clientEmitter == null || clientReceiver == null) {
+            if(clientEmitter == null || clientReceiver == null || originAgency == null || destinationAgency == null) {
                 return ResponseEntity.notFound().build();
             } else {
                 return ResponseEntity.status(HttpStatus.CREATED).body(shipmentService.save(shipment));
@@ -95,13 +98,13 @@ public class ShipmentController {
     }
 
     @GetMapping(value = "/getByEmitterIdAndReceiverId/{emitterId}/{receiverId}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<ShipmentEntity> getByEmitterIdAndReceiverId(@PathVariable("emitterId") Long emitterId, @PathVariable("receiverId") Long receiverId) {
+    public ResponseEntity<List<ShipmentEntity>> getByEmitterIdAndReceiverId(@PathVariable("emitterId") Long emitterId, @PathVariable("receiverId") Long receiverId) {
         try {
-            ShipmentEntity shipment = shipmentService.getByEmitterIdAndReceiverId(emitterId, receiverId);
-            if (shipment == null) {
+            List<ShipmentEntity> shipments = shipmentService.getByEmitterIdAndReceiverId(emitterId, receiverId);
+            if (shipments == null) {
                 return ResponseEntity.notFound().build();
             }
-            return ResponseEntity.ok(shipment);
+            return ResponseEntity.ok(shipments);
         } catch (Exception e) {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
@@ -152,26 +155,26 @@ public class ShipmentController {
     }
 
     @GetMapping(value = "/getByOriginAgencyId/{originAgencyId}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<ShipmentEntity> getByOriginAgencyId(@PathVariable("originAgencyId") Long originAgencyId) {
+    public ResponseEntity<List<ShipmentEntity>> getByOriginAgencyId(@PathVariable("originAgencyId") Long originAgencyId) {
         try {
-            ShipmentEntity shipment = shipmentService.getByOriginAgencyId(originAgencyId);
-            if (shipment == null) {
+            List<ShipmentEntity> shipments = shipmentService.getByOriginAgencyId(originAgencyId);
+            if (shipments == null) {
                 return ResponseEntity.notFound().build();
             }
-            return ResponseEntity.ok(shipment);
+            return ResponseEntity.ok(shipments);
         } catch (Exception e) {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
 
     @GetMapping(value = "/getByDestinationAgencyId/{destinationAgencyId}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<ShipmentEntity> getByDestinationAgencyId(@PathVariable("destinationAgencyId") Long destinationAgencyId) {
+    public ResponseEntity<List<ShipmentEntity>> getByDestinationAgencyId(@PathVariable("destinationAgencyId") Long destinationAgencyId) {
         try {
-            ShipmentEntity shipment = shipmentService.getByDestinationAgencyId(destinationAgencyId);
-            if (shipment == null) {
+            List<ShipmentEntity> shipments = shipmentService.getByDestinationAgencyId(destinationAgencyId);
+            if (shipments == null) {
                 return ResponseEntity.notFound().build();
             }
-            return ResponseEntity.ok(shipment);
+            return ResponseEntity.ok(shipments);
         } catch (Exception e) {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }

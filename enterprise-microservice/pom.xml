@@ -88,12 +88,13 @@
 			<version>2.6.2</version>
 		</dependency>
 
-		<!-- Message Broker-->
+		<!-- Message Broker
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-bus-amqp</artifactId>
 			<version>3.0.3</version>
 		</dependency>
+		-->
 
 		<!-- This dependency is for open Feign Client -->
 		<dependency>
