@@ -23,13 +23,14 @@ public class ShipmentController {
     @PostMapping(value="/save", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<ShipmentEntity> saveShipment(@Valid @RequestBody ShipmentEntity shipment) {
         try {
-            ShipmentEntity shipmentNew = shipmentService.save(shipment);
             ClientEntity clientEmitter = shipmentService.getClientById(shipment.getEmitterId());
             ClientEntity clientReceiver = shipmentService.getClientById(shipment.getReceiverId());
-            if(clientEmitter == null || clientReceiver == null){
+
+            if(clientEmitter == null || clientReceiver == null) {
                 return ResponseEntity.notFound().build();
+            } else {
+                return ResponseEntity.status(HttpStatus.CREATED).body(shipmentService.save(shipment));
             }
-            return ResponseEntity.status(HttpStatus.CREATED).body(shipmentNew);
         } catch (Exception e) {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
