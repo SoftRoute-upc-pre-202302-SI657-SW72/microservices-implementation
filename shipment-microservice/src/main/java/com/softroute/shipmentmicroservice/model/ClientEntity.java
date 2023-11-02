@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ClientEntity {
+    private Long id;
     private String name;
     private String dni;
     private String cellphoneNumber;

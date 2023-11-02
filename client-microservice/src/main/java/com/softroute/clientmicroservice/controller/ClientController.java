@@ -102,12 +102,12 @@ public class ClientController {
         return ResponseEntity.ok(client);
     }
 
-    @GetMapping(value = "/shipmentById/{shipmentId}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<ShipmentEntity> getShipmentsById(@PathVariable("shipmentId") Long shipmentId) {
-        ShipmentEntity shipment = clientService.getShipmentById(shipmentId);
-        if(shipment == null) {
+    @GetMapping(value = "/email/{email}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<ClientEntity> getByEmail(@PathVariable("email") String email) {
+        ClientEntity client = clientService.getByEmail(email);
+        if(client == null) {
             return ResponseEntity.notFound().build();
         }
-        return ResponseEntity.ok(shipment);
+        return ResponseEntity.ok(client);
     }
 }

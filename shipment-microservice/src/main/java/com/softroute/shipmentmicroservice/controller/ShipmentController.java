@@ -23,8 +23,14 @@ public class ShipmentController {
     @PostMapping(value="/save", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<ShipmentEntity> saveShipment(@Valid @RequestBody ShipmentEntity shipment) {
         try {
-            ShipmentEntity shipmentNew = shipmentService.save(shipment);
-            return ResponseEntity.status(HttpStatus.CREATED).body(shipmentNew);
+            ClientEntity clientEmitter = shipmentService.getClientById(shipment.getEmitterId());
+            ClientEntity clientReceiver = shipmentService.getClientById(shipment.getReceiverId());
+
+            if(clientEmitter == null || clientReceiver == null) {
+                return ResponseEntity.notFound().build();
+            } else {
+                return ResponseEntity.status(HttpStatus.CREATED).body(shipmentService.save(shipment));
+            }
         } catch (Exception e) {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
@@ -140,6 +146,71 @@ public class ShipmentController {
         try {
             ClientEntity clientNew = shipmentService.saveClient(client);
             return ResponseEntity.status(HttpStatus.CREATED).body(clientNew);
+        } catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    @GetMapping(value = "/getByOriginAgencyId/{originAgencyId}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<ShipmentEntity> getByOriginAgencyId(@PathVariable("originAgencyId") Long originAgencyId) {
+        try {
+            ShipmentEntity shipment = shipmentService.getByOriginAgencyId(originAgencyId);
+            if (shipment == null) {
+                return ResponseEntity.notFound().build();
+            }
+            return ResponseEntity.ok(shipment);
+        } catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    @GetMapping(value = "/getByDestinationAgencyId/{destinationAgencyId}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<ShipmentEntity> getByDestinationAgencyId(@PathVariable("destinationAgencyId") Long destinationAgencyId) {
+        try {
+            ShipmentEntity shipment = shipmentService.getByDestinationAgencyId(destinationAgencyId);
+            if (shipment == null) {
+                return ResponseEntity.notFound().build();
+            }
+            return ResponseEntity.ok(shipment);
+        } catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    @GetMapping(value = "/getClientByDni/{clientDni}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<ClientEntity> getClientByDni(@PathVariable("clientDni") String clientDni) {
+        try {
+            ClientEntity client = shipmentService.getClientByDni(clientDni);
+            if (client == null) {
+                return ResponseEntity.notFound().build();
+            }
+            return ResponseEntity.ok(client);
+        } catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    @GetMapping(value = "/getClientByEmail/{clientEmail}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<ClientEntity> getClientByEmail(@PathVariable("clientEmail") String clientEmail) {
+        try {
+            ClientEntity client = shipmentService.getClientByEmail(clientEmail);
+            if (client == null) {
+                return ResponseEntity.notFound().build();
+            }
+            return ResponseEntity.ok(client);
+        } catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    @GetMapping(value = "/getClientById/{clientId}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<ClientEntity> getClientById(@PathVariable("clientId") Long clientId) {
+        try {
+            ClientEntity client = shipmentService.getClientById(clientId);
+            if (client == null) {
+                return ResponseEntity.notFound().build();
+            }
+            return ResponseEntity.ok(client);
         } catch (Exception e) {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }

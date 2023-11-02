@@ -8,7 +8,6 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @SpringBootApplication
 @EnableFeignClients
 @EnableEurekaClient
-
 public class ShipmentMicroserviceApplication {
 
 	public static void main(String[] args) {
