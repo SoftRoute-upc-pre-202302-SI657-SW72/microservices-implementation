@@ -9,7 +9,6 @@ public interface EnterpriseRepository extends JpaRepository<EnterpriseEntity, Lo
     EnterpriseEntity findEnterpriseById(Long idEnterprise);
     EnterpriseEntity findByName(String name);
     EnterpriseEntity findEnterpriseByEmail(String email);
-
     EnterpriseEntity findByRuc(String ruc);
 
 }

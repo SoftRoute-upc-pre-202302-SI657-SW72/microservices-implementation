@@ -1,6 +1,7 @@
 package com.softroute.enterprisemicroservice.controller;
 
 import com.softroute.enterprisemicroservice.entity.EnterpriseEntity;
+import com.softroute.enterprisemicroservice.model.AgencyEntity;
 import com.softroute.enterprisemicroservice.service.EnterpriseService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -33,8 +34,13 @@ public class EnterpriseController {
     })
     public ResponseEntity<EnterpriseEntity> saveEnterprise(@Valid @RequestBody EnterpriseEntity enterprise) {
         try {
-            EnterpriseEntity enterpriseNew = enterpriseService.save(enterprise);
-            return ResponseEntity.status(HttpStatus.CREATED).body(enterpriseNew);
+            EnterpriseEntity existingEnterprise = enterpriseService.getEnterpriseByEmail(enterprise.getRuc());
+            if(existingEnterprise != null) {
+                return ResponseEntity.status(HttpStatus.CONFLICT).body(existingEnterprise);
+            }else{
+                EnterpriseEntity enterpriseNew = enterpriseService.save(enterprise);
+                return ResponseEntity.status(HttpStatus.CREATED).body(enterpriseNew);
+            }
         } catch (Exception e) {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
@@ -167,6 +173,118 @@ public class EnterpriseController {
             }
             enterpriseService.delete(id);
             return ResponseEntity.status(HttpStatus.OK).body(enterpriseDeleted);
+        } catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    @PostMapping(value = "/saveAgency", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+    @ApiOperation(value = "Save a new Agency", notes = "This method save a new Agency")
+    @ApiResponses({
+            @ApiResponse(code = 201, message = "Agency created successfully"),
+            @ApiResponse(code = 404, message = "Agency not found"),
+            @ApiResponse(code = 501, message = "Internal Server Error")
+    })
+    public ResponseEntity<AgencyEntity> saveAgency(@Valid @RequestBody AgencyEntity agency) {
+        try {
+            AgencyEntity agencyNew = enterpriseService.saveAgency(agency);
+            return ResponseEntity.status(HttpStatus.CREATED).body(agencyNew);
+        } catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+
+    @GetMapping(value = "/getAgencyById/{agencyId}", produces = MediaType.APPLICATION_JSON_VALUE)
+    @ApiOperation(value = "Get Agency by Id", notes = "This method get Agency by Id")
+    @ApiResponses({
+            @ApiResponse(code = 201, message = "Agency found"),
+            @ApiResponse(code = 404, message = "Agency not found"),
+            @ApiResponse(code = 501, message = "Internal Server Error")
+    })
+    public ResponseEntity<AgencyEntity> getAgencyById(@PathVariable("agencyId") Long agencyId) {
+        try {
+            AgencyEntity agency = enterpriseService.getAgencyById(agencyId);
+            if (agency == null) {
+                return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+            }
+            return ResponseEntity.status(HttpStatus.OK).body(agency);
+        } catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    @GetMapping(value = "/getAgenciesByEnterpriseId/{enterpriseId}", produces = MediaType.APPLICATION_JSON_VALUE)
+    @ApiOperation(value = "Get Agencies by Enterprise Id", notes = "This method get Agencies by Enterprise Id")
+    @ApiResponses({
+            @ApiResponse(code = 201, message = "Agencies found"),
+            @ApiResponse(code = 404, message = "Agencies not found"),
+            @ApiResponse(code = 501, message = "Internal Server Error")
+    })
+    public ResponseEntity<List<AgencyEntity>> getAgenciesByEnterpriseId(@PathVariable("enterpriseId") Long enterpriseId) {
+        try {
+            List<AgencyEntity> agencies = enterpriseService.getAgenciesByEnterpriseId(enterpriseId);
+            if (agencies.isEmpty()) {
+                return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+            }
+            return ResponseEntity.status(HttpStatus.OK).body(agencies);
+        } catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    @GetMapping(value = "/searchCityAgencies/{agency_city}", produces = MediaType.APPLICATION_JSON_VALUE)
+    @ApiOperation(value = "Get Agencies by City", notes = "This method get Agencies by City")
+    @ApiResponses({
+            @ApiResponse(code = 201, message = "Agencies found"),
+            @ApiResponse(code = 404, message = "Agencies not found"),
+            @ApiResponse(code = 501, message = "Internal Server Error")
+    })
+    public ResponseEntity<List<AgencyEntity>> getCityAgencies(@PathVariable("agency_city") String agency_city) {
+        try {
+            List<AgencyEntity> agencies = enterpriseService.getCityAgencies(agency_city);
+            if (agencies.isEmpty()) {
+                return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+            }
+            return ResponseEntity.status(HttpStatus.OK).body(agencies);
+        } catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    @GetMapping(value = "/searchByNameAgency/{agency_name}", produces = MediaType.APPLICATION_JSON_VALUE)
+    @ApiOperation(value = "Get Agency by Name", notes = "This method get Agency by Name")
+    @ApiResponses({
+            @ApiResponse(code = 201, message = "Agency found"),
+            @ApiResponse(code = 404, message = "Agency not found"),
+            @ApiResponse(code = 501, message = "Internal Server Error")
+    })
+    public ResponseEntity<AgencyEntity> getAgencyByName(@PathVariable("agency_name") String agency_name) {
+        try {
+            AgencyEntity agency = enterpriseService.getAgencyByName(agency_name);
+            if (agency == null) {
+                return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+            }
+            return new ResponseEntity<>(agency, HttpStatus.OK);
+        } catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    @GetMapping(value = "/searchByAddressAgency/{agency_address}", produces = MediaType.APPLICATION_JSON_VALUE)
+    @ApiOperation(value = "Get Agency by Address", notes = "This method get Agency by Address")
+    @ApiResponses({
+            @ApiResponse(code = 201, message = "Agency found"),
+            @ApiResponse(code = 404, message = "Agency not found"),
+            @ApiResponse(code = 501, message = "Internal Server Error")
+    })
+    public ResponseEntity<AgencyEntity> getAgencyByAddress(@PathVariable("agency_address") String agency_address) {
+        try {
+            AgencyEntity agency = enterpriseService.getAgencyByAddress(agency_address);
+            if (agency == null) {
+                return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+            }
+            return new ResponseEntity<>(agency, HttpStatus.OK);
         } catch (Exception e) {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }

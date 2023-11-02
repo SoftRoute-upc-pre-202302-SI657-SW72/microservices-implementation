@@ -120,6 +120,17 @@ public class AgencyController {
         return agencyService.getCityAgencies(agencyCity);
     }
 
+    @GetMapping(value = "/searchByEnterpriseId/{enterprise_id}", produces = MediaType.APPLICATION_JSON_VALUE)
+    @ApiOperation(value = "Get Agencies by Enterprise Id", notes = "This method get Agencies by Enterprise Id")
+    @ApiResponses({
+            @ApiResponse(code = 201, message = "Agencies found"),
+            @ApiResponse(code = 404, message = "Agencies not found"),
+            @ApiResponse(code = 501, message = "Internal Server Error")
+    })
+    public List<AgencyEntity> getAgenciesByEnterpriseId(@PathVariable("enterprise_id") Long enterpriseId) {
+        return agencyService.getAgenciesByEnterpriseId(enterpriseId);
+    }
+
 
     @DeleteMapping(value = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     @ApiOperation(value = "Delete Agency by Id", notes = "This method delete Agency by Id")

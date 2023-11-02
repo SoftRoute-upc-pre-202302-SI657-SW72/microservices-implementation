@@ -11,5 +11,7 @@ public interface AgencyRepository extends JpaRepository<AgencyEntity, Long>{
     AgencyEntity findAgencyById(Long idAgency);
     AgencyEntity findByAgencyName (String agencyName);
     AgencyEntity findByAgencyAddress (String agencyAddress);
+
+    List<AgencyEntity> findByEnterpriseId(Long enterpriseId);
     List<AgencyEntity> findAllByAgencyCity(String agencyCity);
 }
