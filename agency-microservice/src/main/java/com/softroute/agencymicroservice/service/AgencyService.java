@@ -28,6 +28,10 @@ public class AgencyService {
     public List<AgencyEntity> getCityAgencies(String agencyCity) {
         return agencyRepository.findAllByAgencyCity(agencyCity);
     }
+
+    public List<AgencyEntity> getAgenciesByEnterpriseId(Long enterpriseId) {
+        return agencyRepository.findByEnterpriseId(enterpriseId);
+    }
     public List<AgencyEntity> getAll() {
         return agencyRepository.findAll();
     }
