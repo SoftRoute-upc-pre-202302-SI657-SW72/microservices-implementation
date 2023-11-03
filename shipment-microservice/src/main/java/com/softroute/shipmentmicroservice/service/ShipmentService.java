@@ -1,7 +1,9 @@
 package com.softroute.shipmentmicroservice.service;
 
 import com.softroute.shipmentmicroservice.entity.ShipmentEntity;
+import com.softroute.shipmentmicroservice.feignclients.AgencyFeignClient;
 import com.softroute.shipmentmicroservice.feignclients.ClientFeignClient;
+import com.softroute.shipmentmicroservice.model.AgencyEntity;
 import com.softroute.shipmentmicroservice.repository.ShipmentRepository;
 import com.softroute.shipmentmicroservice.model.ClientEntity;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +19,9 @@ public class ShipmentService {
 
     @Autowired
     ClientFeignClient clientFeignClient;
+
+    @Autowired
+    AgencyFeignClient agencyFeignClient;
 
     public List<ShipmentEntity> getAll() {
         return shipmentRepository.findAll();
@@ -42,7 +47,7 @@ public class ShipmentService {
         return shipmentRepository.getByCode(code);
     }
 
-    public ShipmentEntity getByEmitterIdAndReceiverId(Long emitterId, Long receiverId) {
+    public List<ShipmentEntity> getByEmitterIdAndReceiverId(Long emitterId, Long receiverId) {
         return shipmentRepository.getByEmitterIdAndReceiverId(emitterId, receiverId);
     }
 
@@ -60,11 +65,11 @@ public class ShipmentService {
         return clientFeignClient.save(client);
     }
 
-    public ShipmentEntity getByOriginAgencyId(Long originAgencyId) {
+    public List<ShipmentEntity> getByOriginAgencyId(Long originAgencyId) {
         return shipmentRepository.getByOriginAgencyId(originAgencyId);
     }
 
-    public ShipmentEntity getByDestinationAgencyId(Long destinationId) {
+    public List<ShipmentEntity> getByDestinationAgencyId(Long destinationId) {
         return shipmentRepository.getByDestinationAgencyId(destinationId);
     }
 
@@ -78,6 +83,10 @@ public class ShipmentService {
 
     public ClientEntity getClientById(Long clientId) {
         return clientFeignClient.getById(clientId);
+    }
+
+    public AgencyEntity getAgencyById(Long agencyId) {
+        return agencyFeignClient.getAgencyById(agencyId);
     }
 
 

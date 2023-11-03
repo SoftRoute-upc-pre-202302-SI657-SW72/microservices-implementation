@@ -14,7 +14,7 @@
 	<name>shipment-microservice</name>
 	<description>Shipment microservice</description>
 	<properties>
-		<java.version>17</java.version>
+		<java.version>11</java.version>
 		<!-- This dependency is for open Feign Client -->
 		<spring-cloud.version>2020.0.6</spring-cloud.version>
 	</properties>
@@ -98,12 +98,13 @@
 			<artifactId>spring-boot-starter-actuator</artifactId>
 			<version>2.6.2</version>
 		</dependency>
-		<!-- Message Broker-->
+		<!-- Message Broker
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-bus-amqp</artifactId>
 			<version>3.0.3</version>
 		</dependency>
+		-->
 
 		<!-- This dependency is for open Feign Client -->
 		<dependency>

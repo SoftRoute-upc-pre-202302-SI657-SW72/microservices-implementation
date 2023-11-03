@@ -5,8 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a61d9c84-6dc8-445e-bd09-97c9d228ccba" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../api-gateway/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../discovery-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../enterprise-microservice/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agency-microservice/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../agency-microservice/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api-gateway/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../api-gateway/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../api-gateway/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../api-gateway/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../api-gateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api-gateway/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../api-gateway/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api-gateway/target/classes/com/softroute/apigateway/ApiGatewayApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../api-gateway/target/classes/com/softroute/apigateway/ApiGatewayApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sofroute/configserver/ConfigServerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sofroute/configserver/ConfigServerApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../discovery-service/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../discovery-service/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../discovery-service/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../discovery-service/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../discovery-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../discovery-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../discovery-service/target/classes/com/softroute/discoveryservice/DiscoveryServiceApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../discovery-service/target/classes/com/softroute/discoveryservice/DiscoveryServiceApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../enterprise-microservice/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../enterprise-microservice/src/main/resources/bootstrap.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,8 +59,9 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "dev",
-    "last_opened_file_path": "D:/UPC Abel/CICLO VII/Fundamentos de Arquitectura de Software/microservices-implementation/api-gateway",
+    "git-widget-placeholder": "dockerizar",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/HolaM/Desktop/SoftR/microservices-implementation/api-gateway",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -73,6 +92,9 @@
       <workItem from="1697837774002" duration="709000" />
       <workItem from="1697892204164" duration="9000" />
       <workItem from="1698854792277" duration="9664000" />
+      <workItem from="1698833226538" duration="746000" />
+      <workItem from="1698887551069" duration="1865000" />
+      <workItem from="1698939831787" duration="5513000" />
     </task>
     <servers />
   </component>
