@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="config-server" />
+        <module name="enterprise-microservice" />
+        <module name="api-gateway" />
+        <module name="discovery-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="agency-microservice" target="17" />
+      <module name="client-microservice" target="17" />
+      <module name="config" target="20" />
+      <module name="discovery" target="20" />
+      <module name="school-service" target="20" />
+      <module name="school-ui" target="20" />
+      <module name="shipment-microservice" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="agency-microservice" options="-parameters" />
+      <module name="api-gateway" options="-parameters" />
+      <module name="client-microservice" options="-parameters" />
+      <module name="config-server" options="-parameters" />
+      <module name="discovery-service" options="-parameters" />
+      <module name="enterprise-microservice" options="-parameters" />
+      <module name="shipment-microservice" options="-parameters" />
+    </option>
+  </component>
+</project>

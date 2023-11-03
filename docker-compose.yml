@@ -1,0 +1,72 @@
+version: '3'
+services:
+  discovery-service:
+    image: mundex/discovery-service:0.0.1-SNAPSHOT
+    ports:
+      - 8761:8761
+  config-server:
+    image: mundex/config-server:0.0.1-SNAPSHOT
+    links:
+      - discovery-service
+    environment:
+      - JAVA_OPTS=
+        -DEUREKA_SERVER=http://discovery-service:8761/eureka
+    depends_on:
+      - discovery-service
+    ports:
+      - 8888:8888
+  api-gateway:
+    image: mundex/api-gateway:0.0.1-SNAPSHOT
+    links:
+      - discovery-service
+    environment:
+      - JAVA_OPTS=
+        -DEUREKA_SERVER=http://discovery-service:8761/eureka
+    depends_on:
+      - discovery-service
+    ports:
+      - 8080:8080
+  enterprise-microservice:
+    image: mundex/enterprise-microservice:0.0.1-SNAPSHOT
+    environment:
+      - JAVA_OPTS=
+        -DEUREKA_SERVER=http://discovery-service:8761/eureka
+    depends_on:
+      - discovery-service
+      - config-server
+      - api-gateway
+    ports:
+      - 8083:8083
+  agency-microservice:
+    image: mundex/agency-microservice:0.0.1-SNAPSHOT
+    environment:
+      - JAVA_OPTS=
+        -DEUREKA_SERVER=http://discovery-service:8761/eureka
+    depends_on:
+      - discovery-service
+      - config-server
+      - api-gateway
+    ports:
+      - 8084:8084
+  shipment-microservice:
+    image: mundex/shipment-microservice:0.0.1-SNAPSHOT
+    environment:
+      - JAVA_OPTS=
+        -DEUREKA_SERVER=http://discovery-service:8761/eureka
+    depends_on:
+      - discovery-service
+      - config-server
+      - api-gateway
+    ports:
+      - 8082:8082
+  client-microservice:
+    image: mundex/client-microservice:0.0.1-SNAPSHOT
+    environment:
+      - JAVA_OPTS=
+        -DEUREKA_SERVER=http://discovery-service:8761/eureka
+    depends_on:
+      - discovery-service
+      - config-server
+      - api-gateway
+    ports:
+      - 8081:8081

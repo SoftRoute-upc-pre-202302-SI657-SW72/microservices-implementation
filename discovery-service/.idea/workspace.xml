@@ -5,34 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="181c3301-e69e-484f-bcc7-11fae68e2ed8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../enterprise-microservice/src/main/java/com/softroute/enterprisemicroservice/feignclients/AgencyFeignClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../enterprise-microservice/src/main/java/com/softroute/enterprisemicroservice/model/AgencyEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../agency-microservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../agency-microservice/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../agency-microservice/src/main/java/com/softroute/agencymicroservice/controller/AgencyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../agency-microservice/src/main/java/com/softroute/agencymicroservice/controller/AgencyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../agency-microservice/src/main/java/com/softroute/agencymicroservice/repository/AgencyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../agency-microservice/src/main/java/com/softroute/agencymicroservice/repository/AgencyRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../agency-microservice/src/main/java/com/softroute/agencymicroservice/service/AgencyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../agency-microservice/src/main/java/com/softroute/agencymicroservice/service/AgencyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api-gateway/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config-server/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../enterprise-microservice/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../agency-microservice/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../agency-microservice/src/main/resources/bootstrap.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../api-gateway/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../api-gateway/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api-gateway/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../api-gateway/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../api-gateway/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../api-gateway/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client-microservice/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client-microservice/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client-microservice/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client-microservice/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../config-server/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../config-server/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../api-gateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api-gateway/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../api-gateway/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api-gateway/target/classes/com/softroute/apigateway/ApiGatewayApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../api-gateway/target/classes/com/softroute/apigateway/ApiGatewayApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../config-server/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../config-server/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../config-server/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../config-server/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../config-server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../config-server/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../config-server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config-server/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../config-server/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config-server/target/classes/com/sofroute/configserver/ConfigServerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../config-server/target/classes/com/sofroute/configserver/ConfigServerApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../enterprise-microservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../enterprise-microservice/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../enterprise-microservice/src/main/java/com/softroute/enterprisemicroservice/EnterpriseMicroserviceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../enterprise-microservice/src/main/java/com/softroute/enterprisemicroservice/EnterpriseMicroserviceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../enterprise-microservice/src/main/java/com/softroute/enterprisemicroservice/controller/EnterpriseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../enterprise-microservice/src/main/java/com/softroute/enterprisemicroservice/controller/EnterpriseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../enterprise-microservice/src/main/java/com/softroute/enterprisemicroservice/repository/EnterpriseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../enterprise-microservice/src/main/java/com/softroute/enterprisemicroservice/repository/EnterpriseRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../enterprise-microservice/src/main/java/com/softroute/enterprisemicroservice/service/EnterpriseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../enterprise-microservice/src/main/java/com/softroute/enterprisemicroservice/service/EnterpriseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/softroute/discoveryservice/DiscoveryServiceApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/softroute/discoveryservice/DiscoveryServiceApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../enterprise-microservice/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../enterprise-microservice/src/main/resources/bootstrap.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shipment-microservice/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../shipment-microservice/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shipment-microservice/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../shipment-microservice/.idea/vcs.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,9 +73,9 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "dev",
-    "last_opened_file_path": "D:/UPC Abel/CICLO VII/Fundamentos de Arquitectura de Software/microservices-implementation/config-server",
+    "git-widget-placeholder": "dockerizar",
     "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/HolaM/Desktop/SoftR/microservices-implementation/config-server",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -115,6 +107,7 @@
       <workItem from="1697892561059" duration="1215000" />
       <workItem from="1698833198703" duration="640000" />
       <workItem from="1698887515849" duration="623000" />
+      <workItem from="1698938089784" duration="7796000" />
     </task>
     <servers />
   </component>
