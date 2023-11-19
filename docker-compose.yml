@@ -70,3 +70,36 @@ services:
       - api-gateway
     ports:
       - 8081:8081
+  feedback-service:
+    image: mundex/feedback-service:0.0.1-SNAPSHOT
+    environment:
+      - JAVA_OPTS=
+        -DEUREKA_SERVER=http://discovery-service:8761/eureka
+    depends_on:
+      - discovery-service
+      - config-server
+      - api-gateway
+    ports:
+      - 8085:8085
+  verification-service:
+    image: mundex/verification-service:0.0.1-SNAPSHOT
+    environment:
+      - JAVA_OPTS=
+        -DEUREKA_SERVER=http://discovery-service:8761/eureka
+    depends_on:
+      - discovery-service
+      - config-server
+      - api-gateway
+    ports:
+      - 8086:8086
+  shipping-register-service:
+    image: mundex/shipping-register-service:0.0.1-SNAPSHOT
+    environment:
+      - JAVA_OPTS=
+        -DEUREKA_SERVER=http://discovery-service:8761/eureka
+    depends_on:
+      - discovery-service
+      - config-server
+      - api-gateway
+    ports:
+      - 8087:8087

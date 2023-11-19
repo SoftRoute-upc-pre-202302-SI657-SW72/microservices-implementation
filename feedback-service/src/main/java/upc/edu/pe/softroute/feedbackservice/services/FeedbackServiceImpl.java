@@ -1,12 +1,15 @@
 package upc.edu.pe.softroute.feedbackservice.services;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import upc.edu.pe.softroute.feedbackservice.domain.models.Complaint;
 import upc.edu.pe.softroute.feedbackservice.domain.models.Feedback;
+import upc.edu.pe.softroute.feedbackservice.domain.models.ShipmentEntity;
 import upc.edu.pe.softroute.feedbackservice.domain.repositories.FeedbackRepository;
 import upc.edu.pe.softroute.feedbackservice.domain.services.ComplaintService;
 import upc.edu.pe.softroute.feedbackservice.domain.services.FeedbackService;
 import upc.edu.pe.softroute.feedbackservice.exceptions.NotFoundException;
+import upc.edu.pe.softroute.feedbackservice.feignclients.ShipmentFeignClient;
 import upc.edu.pe.softroute.feedbackservice.resources.FeedbackSaveResource;
 import upc.edu.pe.softroute.feedbackservice.resources.FeedbackUpdateResource;
 
@@ -17,6 +20,8 @@ import java.util.List;
 @Service
 public class FeedbackServiceImpl implements FeedbackService {
 
+    @Autowired
+    ShipmentFeignClient shipmentFeignClient;
     private final FeedbackRepository feedbackRepository;
     private final ComplaintService complaintService;
 
@@ -84,5 +89,8 @@ public class FeedbackServiceImpl implements FeedbackService {
         feedback.setDeletedDate(LocalDate.now());
 
         return feedbackRepository.save(feedback);
+    }
+    public ShipmentEntity getShipmentById(Long shipmentId) {
+        return shipmentFeignClient.getShipmentById(shipmentId);
     }
 }

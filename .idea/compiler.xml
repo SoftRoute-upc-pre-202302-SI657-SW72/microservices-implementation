@@ -8,18 +8,18 @@
         <outputRelativeToContentRoot value="true" />
         <module name="config-server" />
         <module name="enterprise-microservice" />
+        <module name="shipment-microservice" />
         <module name="api-gateway" />
+        <module name="agency-microservice" />
+        <module name="client-microservice" />
         <module name="discovery-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="agency-microservice" target="17" />
-      <module name="client-microservice" target="17" />
       <module name="config" target="20" />
       <module name="discovery" target="20" />
       <module name="school-service" target="20" />
       <module name="school-ui" target="20" />
-      <module name="shipment-microservice" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

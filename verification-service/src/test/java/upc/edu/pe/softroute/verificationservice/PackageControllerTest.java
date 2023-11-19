@@ -24,18 +24,6 @@ public class PackageControllerTest {
     private PackageService packageService;
 
     @Test
-    public void testRegisterPackage() {
-        Package newPackage = new Package(1L, "travelling");
-
-        when(packageService.registerPackage(any(Package.class))).thenReturn(newPackage);
-
-        ResponseEntity<?> response = packageController.registerPackage(newPackage);
-
-        Assertions.assertEquals(201, response.getStatusCodeValue());
-        Assertions.assertEquals(newPackage, response.getBody());
-    }
-
-    @Test
     public void testUpdatePackageStatus() {
         Long packageId = 1L;
         String newStatus = "delivered";
@@ -49,5 +37,17 @@ public class PackageControllerTest {
         Package response = packageController.updatePackageStatus(packageId);
 
         Assertions.assertEquals(updatedPackage, response);
+    }
+
+    @Test
+    public void testRegisterPackage() {
+        Package newPackage = new Package(1L, "travelling");
+
+        when(packageService.registerPackage(any(Package.class))).thenReturn(newPackage);
+
+        ResponseEntity<?> response = packageController.registerPackage(newPackage);
+
+        Assertions.assertEquals(201, response.getStatusCodeValue());
+        Assertions.assertEquals(newPackage, response.getBody());
     }
 }

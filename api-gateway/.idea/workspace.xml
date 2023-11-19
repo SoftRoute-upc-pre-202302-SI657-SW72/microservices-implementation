@@ -5,26 +5,64 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eae7d270-43af-4775-bf77-d3d990c455eb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../config-server/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../discovery-service/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../enterprise-microservice/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../feedback-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../agency-microservice/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../agency-microservice/src/main/resources/bootstrap.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/softroute/apigateway/ApiGatewayApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/softroute/apigateway/ApiGatewayApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-microservice/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client-microservice/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-microservice/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../client-microservice/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-microservice/target/classes/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../client-microservice/target/classes/bootstrap.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-microservice/target/classes/com/softroute/clientmicroservice/ClientMicroserviceApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../client-microservice/target/classes/com/softroute/clientmicroservice/ClientMicroserviceApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-microservice/target/classes/com/softroute/clientmicroservice/controller/ClientController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../client-microservice/target/classes/com/softroute/clientmicroservice/controller/ClientController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-microservice/target/classes/com/softroute/clientmicroservice/entity/ClientEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/../client-microservice/target/classes/com/softroute/clientmicroservice/entity/ClientEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-microservice/target/classes/com/softroute/clientmicroservice/model/ShipmentEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/../client-microservice/target/classes/com/softroute/clientmicroservice/model/ShipmentEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-microservice/target/classes/com/softroute/clientmicroservice/repository/IClientRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../client-microservice/target/classes/com/softroute/clientmicroservice/repository/IClientRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-microservice/target/classes/com/softroute/clientmicroservice/service/ClientService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../client-microservice/target/classes/com/softroute/clientmicroservice/service/ClientService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-microservice/target/classes/com/softroute/clientmicroservice/util/SwaggerConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/../client-microservice/target/classes/com/softroute/clientmicroservice/util/SwaggerConfiguration.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../config-server/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../config-server/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../config-server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../config-server/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../config-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../config-server/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../config-server/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../config-server/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../config-server/target/classes/com/sofroute/configserver/ConfigServerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../config-server/target/classes/com/sofroute/configserver/ConfigServerApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../discovery-service/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../discovery-service/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../discovery-service/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../discovery-service/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../discovery-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../discovery-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../discovery-service/target/classes/com/softroute/discoveryservice/DiscoveryServiceApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../discovery-service/target/classes/com/softroute/discoveryservice/DiscoveryServiceApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../enterprise-microservice/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../enterprise-microservice/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../feedback-service/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../feedback-service/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../feedback-service/.idea/shelf/Uncommitted_changes_before_Checkout_at_20_10_2023_18_22_[Changes]/shelved.patch" beforeDir="false" afterPath="$PROJECT_DIR$/../feedback-service/.idea/shelf/Uncommitted_changes_before_Checkout_at_20_10_2023_18_22_[Changes]/shelved.patch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../feedback-service/.idea/shelf/Uncommitted_changes_before_Checkout_at_20_10_2023_18_22__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../feedback-service/.idea/shelf/Uncommitted_changes_before_Checkout_at_20_10_2023_18_22__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../feedback-service/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../feedback-service/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../feedback-service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../feedback-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../feedback-service/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/../feedback-service/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../feedback-service/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/../feedback-service/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../feedback-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../feedback-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../feedback-service/src/main/java/upc/edu/pe/softroute/feedbackservice/FeedbackServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../feedback-service/src/main/java/upc/edu/pe/softroute/feedbackservice/FeedbackServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../feedback-service/src/main/java/upc/edu/pe/softroute/feedbackservice/controllers/ComplaintController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../feedback-service/src/main/java/upc/edu/pe/softroute/feedbackservice/controllers/ComplaintController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../feedback-service/src/main/java/upc/edu/pe/softroute/feedbackservice/controllers/FeedbackController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../feedback-service/src/main/java/upc/edu/pe/softroute/feedbackservice/controllers/FeedbackController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../feedback-service/src/main/java/upc/edu/pe/softroute/feedbackservice/domain/models/Complaint.java" beforeDir="false" afterPath="$PROJECT_DIR$/../feedback-service/src/main/java/upc/edu/pe/softroute/feedbackservice/domain/models/Complaint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../feedback-service/src/main/java/upc/edu/pe/softroute/feedbackservice/domain/models/Feedback.java" beforeDir="false" afterPath="$PROJECT_DIR$/../feedback-service/src/main/java/upc/edu/pe/softroute/feedbackservice/domain/models/Feedback.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../feedback-service/src/main/java/upc/edu/pe/softroute/feedbackservice/domain/repositories/ComplaintRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../feedback-service/src/main/java/upc/edu/pe/softroute/feedbackservice/domain/repositories/ComplaintRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../feedback-service/src/main/java/upc/edu/pe/softroute/feedbackservice/domain/repositories/FeedbackRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../feedback-service/src/main/java/upc/edu/pe/softroute/feedbackservice/domain/repositories/FeedbackRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../feedback-service/src/main/java/upc/edu/pe/softroute/feedbackservice/domain/services/ComplaintService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../feedback-service/src/main/java/upc/edu/pe/softroute/feedbackservice/domain/services/ComplaintService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../feedback-service/src/main/java/upc/edu/pe/softroute/feedbackservice/domain/services/FeedbackService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../feedback-service/src/main/java/upc/edu/pe/softroute/feedbackservice/domain/services/FeedbackService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../feedback-service/src/main/java/upc/edu/pe/softroute/feedbackservice/exceptions/ErrorMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../feedback-service/src/main/java/upc/edu/pe/softroute/feedbackservice/exceptions/ErrorMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../feedback-service/src/main/java/upc/edu/pe/softroute/feedbackservice/exceptions/NotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../feedback-service/src/main/java/upc/edu/pe/softroute/feedbackservice/exceptions/NotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../feedback-service/src/main/java/upc/edu/pe/softroute/feedbackservice/exceptions/RestExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../feedback-service/src/main/java/upc/edu/pe/softroute/feedbackservice/exceptions/RestExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../feedback-service/src/main/java/upc/edu/pe/softroute/feedbackservice/resources/ComplaintResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/../feedback-service/src/main/java/upc/edu/pe/softroute/feedbackservice/resources/ComplaintResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../feedback-service/src/main/java/upc/edu/pe/softroute/feedbackservice/resources/ComplaintSaveResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/../feedback-service/src/main/java/upc/edu/pe/softroute/feedbackservice/resources/ComplaintSaveResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../feedback-service/src/main/java/upc/edu/pe/softroute/feedbackservice/resources/FeedbackResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/../feedback-service/src/main/java/upc/edu/pe/softroute/feedbackservice/resources/FeedbackResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../feedback-service/src/main/java/upc/edu/pe/softroute/feedbackservice/resources/FeedbackSaveResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/../feedback-service/src/main/java/upc/edu/pe/softroute/feedbackservice/resources/FeedbackSaveResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../feedback-service/src/main/java/upc/edu/pe/softroute/feedbackservice/resources/FeedbackUpdateResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/../feedback-service/src/main/java/upc/edu/pe/softroute/feedbackservice/resources/FeedbackUpdateResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../feedback-service/src/main/java/upc/edu/pe/softroute/feedbackservice/services/ComplaintServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../feedback-service/src/main/java/upc/edu/pe/softroute/feedbackservice/services/ComplaintServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../feedback-service/src/main/java/upc/edu/pe/softroute/feedbackservice/services/FeedbackServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../feedback-service/src/main/java/upc/edu/pe/softroute/feedbackservice/services/FeedbackServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../feedback-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../feedback-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../feedback-service/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../feedback-service/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../feedback-service/src/test/java/upc/edu/pe/softroute/feedbackservice/FeedbackServiceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../feedback-service/src/test/java/upc/edu/pe/softroute/feedbackservice/services/FeedbackServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../feedback-service/src/test/java/upc/edu/pe/softroute/feedbackservice/services/FeedbackServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shipment-microservice/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../shipment-microservice/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shipment-microservice/src/main/java/com/softroute/shipmentmicroservice/controller/ShipmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shipment-microservice/src/main/java/com/softroute/shipmentmicroservice/controller/ShipmentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shipment-microservice/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../shipment-microservice/src/main/resources/bootstrap.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +101,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "dockerizar",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/HolaM/Desktop/SoftR/microservices-implementation/enterprise-microservice",
+    "last_opened_file_path": "C:/Users/HolaM/Desktop/FinalFunda/microservices-implementation/api-gateway",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -98,6 +136,7 @@
       <workItem from="1698854808158" duration="9963000" />
       <workItem from="1698887613976" duration="704000" />
       <workItem from="1698943365390" duration="1027000" />
+      <workItem from="1700375531534" duration="4254000" />
     </task>
     <servers />
   </component>
