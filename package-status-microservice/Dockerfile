@@ -1,5 +1,5 @@
 FROM openjdk:17-alpine
-COPY ./target/shipping-register-service-0.0.1-SNAPSHOT.jar /
-RUN sh -c 'touch /shipping-register-service-0.0.1-SNAPSHOT.jar'
-ENTRYPOINT ["java","-jar","/shipping-register-service-0.0.1-SNAPSHOT.jar"]
-RUN chm
+COPY ./target/docker-spring-boot.jar /
+RUN sh -c 'touch /docker-spring-boot.jar'
+ENTRYPOINT ["java","-jar","/docker-spring-boot.jar"]
+RUN chmod +x /docker-spring-boot.jar

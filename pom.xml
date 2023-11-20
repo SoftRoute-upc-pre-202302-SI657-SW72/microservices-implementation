@@ -16,5 +16,8 @@
 		<module>agency-microservice</module>
 		<module>shipment-microservice</module>
 		<module>client-microservice</module>
+		<module>feedback-service</module>
+		<module>verification-service</module>
+		<module>package-status-microservice</module>
 	</modules>
 </project>

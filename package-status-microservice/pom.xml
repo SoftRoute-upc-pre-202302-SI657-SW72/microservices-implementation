@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>upc.edu.pe.softroute</groupId>
-	<artifactId>shipping-register-service</artifactId>
+	<artifactId>package-status-microservice</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>shipping-register-service</name>
+	<name>package-status-microservice</name>
 	<description>Project of SoftRoute service of register package</description>
 	<properties>
 		<java.version>17</java.version>
